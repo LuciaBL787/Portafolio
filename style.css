@@ -1,25 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&family=DM+Serif+Display:ital@0;1&display=swap');
-
-* {
-    padding: 0;
-    margin: 0;
-}
-
-:root {
-
-}
-
-html {
-    font-size: 16px;
-}
-
 body {
     background-color: var(--color-fondo);
     font-family: "Antic Didone", serif;
     font-weight: bold;
     box-sizing: border-box;
-    background-color: #F2F2E7;
-    color: #333333;
+    background-color: var(--fondo);
+    color: var(--texto);
+    font-size: 1.3rem;
 }
 
 .header {
@@ -32,12 +18,11 @@ body {
     padding: 1%;
     display: flex;
     align-items: center;
-    color: #333333;
     gap: 3%
 }
 
 .navegacion {
-    padding-right: 9%;
+    margin-right: 9%;
     padding-top: 1.5%;
 }
 
@@ -52,22 +37,19 @@ body {
 }
 
 a {
-    color: #002442;
+    color: var(--titulos);
     text-decoration: none;
     white-space: nowrap;
 }
 
 .linea {
-    background-color: #333333;
-    color: #CACFC6;
-    font-size: 0,5rem;
-    max-height: 2px;
-    box-shadow:#343A40;
+    height: 3px;
+    background: var(--texto);
 }
 
 .presentacion {
     display: flex;
-    background-color: #CECFC2;
+    background-color: var(--fondo2);
 }
 
 .presentacion__contenedor {
@@ -76,234 +58,194 @@ a {
     text-align: center;
     gap: 10%;
     padding: 0 2%;
-    line-height: 200%;
+    line-height: 150%;
 }
 
 .pc2 {
-    max-width: 37%;
+    width: 150%;
 }
 
 .presentacion__titulo {
-    color: #002442;
+    color: var(--titulos);
     font-size: 4rem;
     margin-top: 15%;
-    font-family: "DM Serif Display", serif;;
+    font-family: "DM Serif Display", serif;
 }
 
 .presentacion__titulo2 {
-    margin-top: 12%;
+    margin-top: 10%;
 }
 
 .presentacion__foto {
-    width: 27%;
+    width: 29%;
 }
 
-.encriptador {
-    margin: 0 2% 5% 0;
+.habilidades__aficiones {
     display: flex;
-    justify-content: space-between;
 }
 
-.texto {
+.habilidades, .aficiones, .proyectos, .formacion {
     display: flex;
-    flex-direction: column;
-    padding-left: 10%;
-    gap: 16px;
-    width: 75%;
-}
-
-.texto__ingreso {
-    color: var(--color-principal);
-    font-size: 2rem;
-    padding-top: 4%;
-    border: none;
-    background-color: var(--color-fondo);
-    resize: none;
-    outline: none;
-    color: var(--color-principal);
-    font-family: "Quicksand", sans-serif;
-    text-transform: lowercase;
-}
-
-.texto__ingreso::placeholder {
-    color: var(--color-principal);
-    text-transform: none;
-}
-
-.texto__info {
-    font-size: 0.75rem;
-    color: var(--color-letra-chica);
-    display: flex;
-    gap: 3px;
-}
-
-.texto__botones {
-    display: flex;
-    gap: 24px;
-    padding-bottom: 3.5%;
-}
-
-.texto__boton1 {
-    color: var(--color-fondo-resultado);
-    background-color: var(--color-principal);
-    border-radius: 24px;
-    border: var(--color-principal) solid 1px;
-    padding: 24px;
-    width: 45%;
-}
-
-.texto__boton1:hover {
-    background-color: #6b8a7a;
-    cursor: pointer;
-}
-
-.texto__boton2 {
-    color: var(--color-principal);
-    background-color: #D8DFE8;
-    border-radius: 24px;
-    border: var(--color-principal) solid 1px;
-    padding: 24px;
-    width: 45%;
-}
-
-.texto__boton2:hover {
-    background-color: #ebeff4;
-    cursor: pointer;
-}
-
-.encriptado {
-    background-color: var(--color-fondo-resultado);
-    border-radius: 32px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    gap: 5%;
+    padding: 2% 2%;
     align-items: center;
-    background-image: url(./assets/Muñeco.png);
-    background-repeat: no-repeat;
-    background-position-y: 30%;
-    background-position-x: 50%;
-    width: 30%;
-    padding: 2%;
+    flex-direction: column;
 }
 
-.encriptado__resultado {
-    margin: 4%;
-    border: none;
-    font-size: 1.5rem;
-    background-color: var(--color-fondo-resultado);
-    resize: none;
-    outline: none;
-    color: var(--color-letra-chica);
-    text-transform: lowercase;
-    width: 98%;
+.habilidades__titulo, .aficiones__titulo, .formacion__titulo,
+.proyectos__titulo, .contacto__titulo {
+    font-family: "DM Serif Display", serif;
+    font-size: 3rem;
+    color: var(--titulos);
+    padding: 3%;
 }
 
-.encriptado__texto {
+.aficiones__titulo {
+    margin-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 0;
+}
+
+.habilidades__lista, .aficiones__lista, .formacion__lista{
+    display: flex;
+    list-style: none;
+    gap: 10%;
+    margin-left: 9%;
+}
+
+.habilidades__lista, .aficiones__lista {
+    flex-wrap: wrap;
+}
+
+.habilidades__elemento, .aficiones__elemento, .formacion__elemento {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    height: 70%;
     align-items: center;
+    margin-bottom: 5%;
+}
+
+.habilidades__icono, .aficiones__icono {
+    width: 50%;
+}
+
+.formacion {
+    padding-bottom: 4%;
+    background-color: var(--fondo2);
+}
+
+.formacion__elemento {
+    background-color: white;
+    border-radius: 8%;
+    padding: 1%;
     text-align: center;
-    padding: 1%;
+    gap: 6%;
 }
 
-.encriptado__nohay {
-    font-weight: 700;
-    color: #343A40;
-    font-size: 1.5rem;
-    padding: 1%;
+.formacion__lista {
+    margin-right: 13%;
 }
 
-.encriptado__info {
-    color: var(--color-letra-chica);
-    font-size: 1rem;
+.proyectos__nombre {
+    padding-bottom: 3%;
+    color: var(--titulos);
+    font-size: 1.9rem;
 }
 
-.boton__copiar {
+.proyecto__elemento {
+    display: flex;
+    align-items: center;
+    margin: 5% 10% 7%;
+    gap: 5%;
+}
+
+.proyecto__icono {
+    width: 40%;
+}
+
+.contacto {
+    background-color: var(--fondo2);
+    text-align: center;
+}
+
+.contacto__elemento {
     display: flex;
     justify-content: center;
-    align-items: flex-end;
-    width: 100%;
+    gap: 5%;
+    padding: 0 15% 5% 0;
 }
 
-.encriptado__boton {
-    color: var(--color-principal);
-    background-color: #D8DFE8;
-    border-radius: 24px;
-    border: var(--color-principal) solid 1px;
-    padding: 24px;
-    width: 75%;
+.contacto__icono {
+    width: 30%;
 }
 
-.encriptado__boton:hover {
-    background-color: #ebeff4;
+.contacto__formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 9%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25%;
+}
+
+.contacto__campo {
+    border-radius: 16px;
+    border-color: var(--fondo);
+    width: 300%;
+    font-family: "Antic Didone", serif;
+    font-size: 1.5rem;
+    padding: 2%;
+    resize: none;
+    outline: none;
+}
+
+.contacto__campo::placeholder {
+    color: var(--texto);
+}
+
+.contacto__boton {
+    background-color: var(--titulos);
+    color: var(--fondo);
+    border-radius: 16px;
+    width: 150%;
+    height: 10%;
+    font-family: "Antic Didone", serif;
+    font-size: 1.5rem;
+}
+
+.contacto__boton:hover {
     cursor: pointer;
 }
 
-footer {
-    color: var(--color-fondo-resultado);
-    background-color: var(--color-principal);
-    text-align: center;
-    font-size: 1.5rem;
-    padding: 1.5%;
+.footer {
+    background-color: var(--titulos);
+    color: var(--fondo);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1%;
 }
 
-@media (max-width:1770px) {
-    .texto {
-        width: 60%;
-    }
-    
-    .encriptado {
-        background-position-y: 25%;
-        background-position-x: 50%;
-        width: 40%;
-    }
-}
-
-@media (max-width:1200px) {
-    .logo {
-        width: 8%;
-        padding: 4% 0 0 3%;
+@media (max-width: 1024px) {    
+    body {
+        width: 145%;
     }
 
-    .encriptador {
-        align-items: center;
-        flex-direction: column;
-        gap: 64px;
-        margin: 0 0 10% 0;
-    }
-    
-    .texto {
-        width: 90%;
-        padding: 0;
+    .navegacion {
+        padding-right: 1%;
     }
 
-    .texto__info {
-        padding-left: 3%;
+    .presentacion {
+        flex-wrap: wrap;
     }
 
-    .texto__botones {
-        justify-content: center;
+    .presentacion__foto {
+        width: 25%;
     }
 
-    .encriptado {
-        background-image: none;
-        width: 80%;
-        padding: 2%;
-    }
-
-    .encriptado__texto {
-        gap: 16px;
-    }
-}
-
-@media (max-width:600px) {
-    .logo {
-        width: 14%;
-    }
-
-    .encriptador {
-        margin-bottom: 18%;
+    .redes {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5%;
     }
 }
