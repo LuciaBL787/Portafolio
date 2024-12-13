@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width", inicial-sacle="1.0">
     <title>Portafolio</title>
+    <link rel="stylesheet" href="base.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -24,7 +25,7 @@
             </ul>
         </nav>
     </header>
-    <div class="linea">.</div>
+    <div class="linea"></div>
     <main>
         <section class="presentacion">
             <div class="presentacion__contenedor">
@@ -53,13 +54,14 @@
                     aprendiendo sobre tendencias tecnológicas y sobre desarrollo personal.</p>
             </div>
         </section>
-        <div class="linea">.</div>
+        <div class="linea"></div>
 
+        <div class="habilidades__aficiones">
         <section class="habilidades" id="habilidades">
             <h2 class="habilidades__titulo">Habilidades</h2>
             <ul class="habilidades__lista">
                 <li class="habilidades__elemento">
-                    <img class="habilidades__icono" src="assets/htlm.png" alt="HTML">
+                    <img class="habilidades__icono" src="assets/html.png" alt="HTML">
                     <p class="habilidades__nombre">HTML 5</p>
                 </li>
                 <li class="habilidades__elemento">
@@ -101,13 +103,14 @@
                     <p class="aficiones__nombre">Cocinar</p>
                 </li>
                 <li class="aficiones__elemento">
-                    <img class="aficiones__icono" src="assets/camera_icon.png" alt="Tomar fotos">
+                    <img class="aficiones__icono" src="assets/camara.png" alt="Tomar fotos">
                     <p class="aficiones__nombre">Tomar fotos</p>
                 </li>
             </ul>
         </section>
-    
-        <!-- Sección de Formación académica -->
+        </div>
+        <div class="linea"></div>
+
         <section class="formacion" id="formacion">
             <h2 class="formacion__titulo">Formación académica</h2>
             <ul class="formacion__lista">
@@ -134,35 +137,66 @@
                 </li>
             </ul>
         </section>
+        <div class="linea"></div>
+
     
-        <!-- Sección de Proyectos -->
         <section class="proyectos" id="proyectos">
             <h2 class="proyectos__titulo">Experiencia Profesional</h2>
-            <div class="proyectos__contenedor">
-                <h3 class="proyectos__nombre">Título de la Experiencia</h3>
-                <p class="proyectos__descripcion">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt quisquam unde repudiandae fugiat, earum temporibus!</p>
-            </div>
-            <div class="proyectos__contenedor">
-                <h3 class="proyectos__nombre">Título de la Experiencia</h3>
-                <p class="proyectos__descripcion">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt quisquam unde repudiandae fugiat, earum temporibus!</p>
-            </div>
+            <ul class="proyectos__lista">
+                <li class="proyecto__elemento">
+                    <img class="proyecto__icono" src="assets/page1.png" alt="Proyecto de página web">
+                    <div class="proyectos__contenedor">
+                        <h3 class="proyectos__nombre">Desarrollador Frontend - Agencia Creativa PixelArt</h3>
+                        <p class="proyectos__descripcion">Diseñé e implementé interfaces web modernas y funcionales utilizando HTML,
+                            CSS y JavaScript, garantizando una experiencia de usuario intuitiva.
+                            Colaboré con diseñadores gráficos para transformar maquetas en sitios web interactivos y responsivos.
+                            Optimicé el rendimiento de sitios web, logrando una reducción del tiempo de carga promedio en un 25%.
+                            Implementé accesibilidad web (WCAG) para garantizar la inclusión de todos los usuarios.</p>
+                    </div>
+                </li>
+                <li class="proyecto__elemento">
+                <div class="proyectos__contenedor">
+                    <h3 class="proyectos__nombre">Diseñador UX/UI - Innovatech Solutions</h3>
+                    <p class="proyectos__descripcion">Realicé investigaciones de usuarios para diseñar flujos de trabajo y wireframes
+                        que maximizaban la usabilidad de las aplicaciones. Utilicé herramientas como Figma y Adobe XD para crear
+                        prototipos interactivos y realizar pruebas de usuario. Trabajé en estrecha colaboración con equipos de
+                        desarrollo para garantizar la correcta implementación de diseños.</p>
+                </div>
+                <img class="proyecto__icono" src="assets/page2.png" alt="Proyecto de página web">
+                </li>
+                <li class="proyecto__elemento">
+                    <img class="proyecto__icono" src="assets/page3.png" alt="Proyecto de página web">
+                    <div class="proyectos__contenedor">
+                        <h3 class="proyectos__nombre">Desarrollador Full Stack - Proyecto Freelancer</h3>
+                        <p class="proyectos__descripcion">Creé una aplicación web completa para la gestión de inventarios,
+                            integrando un backend con Node.js y una base de datos MongoDB. Diseñé un panel de control interactivo
+                            que permitió a los clientes visualizar datos en tiempo real. Gestioné el proyecto de principio a fin,
+                            incluyendo la comunicación directa con el cliente y la entrega de actualizaciones periódicas.</p>
+                    </div>
+                </li>
+            </ul>    
         </section>
+        <div class="linea"></div>
+
     
-        <!-- Sección de Contacto -->
         <section class="contacto" id="contacto">
             <h2 class="contacto__titulo">Contacto</h2>
+            <div class="contacto__elemento">
+            <img class="contacto__icono" src="assets/contact_image.png" alt="Proyecto de página web">
             <form class="contacto__formulario">
                 <input class="contacto__campo" type="text" placeholder="Nombre">
                 <input class="contacto__campo" type="email" placeholder="Correo Electrónico">
                 <textarea class="contacto__campo contacto__campo--textarea" placeholder="Mensaje"></textarea>
                 <button class="contacto__boton" type="submit">Enviar</button>
             </form>
+            </div>
         </section>
     </main>
     
-    <footer>
-        <p>Desarrollado por Lucía Limardo</p>
-        <p>2024</p>
+    <div class="linea"></div>
+    <footer class="footer">
+        <p class="footer__texto">Desarrollado por Lucía Limardo</p>
+        <p class="footer__texto">2024</p>
     </footer>
 </body>
 </html>
