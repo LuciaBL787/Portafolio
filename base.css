@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&family=DM+Serif+Display:ital@0;1&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --fondo: #F2F2E7;
+    --fondo2: #CACFC6;
+    --titulos: #002442;
+    --texto: #333333;
+}
+
+html {
+    font-size: 16px;
+}
