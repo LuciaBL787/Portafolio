@@ -1,6 +1,7 @@
 <h1>Portafolio</h1>
 Este proyecto es un portafolio web ficticio creado para presentar las habilidades, experiencia y proyectos de una desarrolladora web llamada Sofía Martínez.
-La información, así como las imágenes utilizadas, fueron generadas utilizando herramientas de inteligencia artificial.El objetivo principal de este portafolio
+La información, así como las imágenes utilizadas, fueron generadas utilizando herramientas de inteligencia artificial. Este portafolio es completamente ficticio.
+Ninguna información, imagen o persona mencionada es real. El objetivo principal de este portafolio
 es servir como ejemplo.
 
 <h2>Tecnologías Utilizadas</h2>
@@ -25,9 +26,6 @@ Secciones del Portafolio:
 
 Diseño:
 - Diseño limpio y profesional con colores suaves y tipografía legible.
-
-Responsivo:
-- Adaptación automática a diferentes tamaños de pantalla.
 
 Imágenes Generadas por IA:
 - Imágenes creadas para reflejar un perfil profesional y alineadas al diseño del sitio.
