@@ -87,7 +87,7 @@ a {
 .habilidades, .aficiones, .proyectos, .formacion {
     display: flex;
     gap: 5%;
-    padding: 2% 2%;
+    padding: 2%;
     align-items: center;
     flex-direction: column;
 }
@@ -226,7 +226,8 @@ a {
     padding: 1%;
 }
 
-@media (max-width: 1024px) {    
+@media (max-width: 1024px) {   
+
     body {
         width: 145%;
     }
@@ -239,13 +240,87 @@ a {
         flex-wrap: wrap;
     }
 
+    .presentacion__contenedor {
+        width: 56%;
+    }
+
+    .pc2 {
+        width: auto;
+    }
+
+    .presentacion__titulo2 {
+        margin-bottom: 3%;
+        padding-right: 52%;
+    }
+
+    .sobre-mi__texto {
+        margin-bottom: 3%;
+    }
+
+    .presentacion__titulo {
+        margin-top: 5%;
+    }
+    .presentacion__titulo2 {
+        margin-top: 0;
+        margin-left: 10%;
+    }
+
     .presentacion__foto {
         width: 25%;
+        padding-left: 9rem;
     }
 
     .redes {
         display: flex;
         flex-wrap: wrap;
         gap: 5%;
+        justify-content: center;
+    }
+
+    .habilidades__titulo {
+        padding-right: 14rem;
+    }
+
+    .habilidades__lista, .aficiones__lista, .formacion__lista{
+        margin-left: 6%;
+    }
+    
+    .contacto__elemento {
+        margin-right: 3%;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    body {
+        width: 174%;
+    }
+    
+    .navegacion {
+        padding-right: 4%;
+    }
+
+    .habilidades__titulo {
+        margin-left: 9rem;
+    }
+
+    .aficiones {
+        width: 100%;
+    }
+
+    .aficiones__titulo {
+        padding-top: 1rem;
+    }
+
+    .proyecto__elemento {
+        margin: 5%;
+    }
+
+    .contacto__campo {
+        width: 250%;
+    }
+
+    .contacto__boton {
+        height: 17%;
     }
 }
